@@ -99,6 +99,5 @@ def ParsingFunction(StreamedData):
 	else:
 		FinalDic = StructuredInformations
 	print(FinalDic)
-	print("")
 
 	return None
