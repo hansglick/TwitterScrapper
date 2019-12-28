@@ -8,28 +8,7 @@ from fun import *
 
 
 # Scrapping Parameters
-TrendingTopics = ["racisme",
-"insécurité",
-"appropriation culturelle",
-"fragilité blanche",
-"privilège blanc",
-"white fragility",
-"white privilege"
-"immigration",
-"fachosphère",
-"fachosphere",
-"islamisme",
-"islamiste",
-"radical",
-"islamophobie",
-"antisémitisme",
-"antiblanc",
-"anti-blanc",
-"sionisme",
-"sioniste",
-"antisioniste",
-"antisionisme",
-"attentat"]
+TrendingTopics = ["nba","Lebron James"]
 AuthFilename = "auth.password"
 
 # Launch the Stream
