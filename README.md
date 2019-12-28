@@ -2,8 +2,10 @@
 
 ### En bref
 Cette application permet de scrapper Twitter en temps réel via la Twitter Stream API. Une liste Python de mots-clés en entrée permet de filtrer les tweets que l'on souhaite récupérer. Chaque tweet est stocké sous la forme d'un JSON. Les informations disponibles sont diverses et variées : screen name du user, description du user, contenu du tweet, date de création, etc. L'application ne se concentre que sur un nombre restreint d'informations. Afin d'en rajouter, il faut modifier la fonction `ParsingFunction` présente dans le fichier `fun.py`. Pour avoir une vision exhaustive des informations disponibles, se référer à la documentation de la Twitter API Stream ici : https://developer.twitter.com/en/docs/tweets/data-dictionary/overview/tweet-object
+<p align="center">
+  <img src="ts.png" width="388">
+</p>
 
-<img src="ts.png" width="388">
 
 
 ### Cloner l'environnement
