@@ -8,12 +8,6 @@ Cette application permet de scrapper Twitter en temps réel via la Twitter Strea
 
 
 
-### Cloner l'environnement
-Il est nécessaire d'avoir certains packages d'installer pour faire tourner l'application, notamment Tweepy, Pandas et Numpy. Afin de reproduire l'environnement, on utilise Conda : 
-```
-conda env create -f TwitterScraperEnv.yml
-conda activate twitter
-```
 
 ### Renseigner le login et le password
 L'application prend en input un fichier `auth.password` que l'utilisateur doit créer lui-même. La structure de celui-ci est la suivante :
@@ -24,15 +18,15 @@ access_token
 access_token_secret
 ```
 
-
 ### Renseigner l'input
 Pour renseigner les mots-clés permettant de filtrer les tweets à récupérer, ouvrir le fichier `main.py` et modifier la liste `TrendingTopics`, par exemple : 
 ```
 TrendingTopics = ["nba","playoffs","Lebron"]
 ```
 ### Lancer l'application 
-Pour lancer l'application : 
+Il est nécessaire d'avoir certains packages d'installés pour faire tourner l'application, notamment Tweepy, Pandas et Numpy. Raison pour laquelle, on clone dans un premier temps l'environnement présent dans le repo via Conda. Dans un second temps, on active l'environnement nouvellement cloné. Enfin, on lance l'application.
 ```
+conda env create -f TwitterScraperEnv.yml
 conda activate twitter
 python main.py 1 >> ScrapedTweets 2 >> Errors
 ```
