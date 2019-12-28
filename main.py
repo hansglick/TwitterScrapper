@@ -35,4 +35,13 @@ TrendingTopics =["racisme",
 AuthFilename = "auth.password"
 
 # Launch the Stream
-LauchScrapping(AuthFilename,TrendingTopics)
+while True:
+	
+	try:
+		LauchScrapping(AuthFilename,TrendingTopics)
+	
+	except KeyboardInterrupt as e:
+		break
+	
+	except:
+		continue
