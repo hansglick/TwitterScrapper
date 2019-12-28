@@ -16,7 +16,7 @@ conda activate twitter
 ```
 
 ### Renseigner le login et le password
-L'application prend en input un fichier `auth.password` que l'utilisateur doit créer lui-même. La structure de celui-ci est la suivante :
+L'application prend en input un fichier `auth.password` que l'utilisateur doit créer lui-même. La structure de celui-ci est la suivante:
 ```
 consumer_token
 consumer_secret
