@@ -62,6 +62,7 @@ def ParsingFunction(StreamedData):
 
 		# User Informations
 		USERNAME = str(tweet["user"]["screen_name"]),
+		USERFNAME = str(tweet["user"]["name"]),
 		USERID = str(tweet["user"]["id_str"]),
 		USERVERIFIED = str(tweet["user"]["verified"]),
 		USERDESCRIPTION = str(tweet["user"]["description"]),
@@ -81,6 +82,7 @@ def ParsingFunction(StreamedData):
 
 			# Author Informations
 			AUTHORNAME = str(tweet["retweeted_status"]["user"]["screen_name"]),
+			AUTHORFNAME = str(tweet["retweeted_status"]["user"]["name"]),
 			AUTHORID = str(tweet["retweeted_status"]["user"]["id_str"]),
 			AUTHORVERIFIED = str(tweet["retweeted_status"]["user"]["verified"]),
 			AUTHORDESCRIPTION = str(tweet["retweeted_status"]['user']['description']),
@@ -97,6 +99,7 @@ def ParsingFunction(StreamedData):
 		rtbool = False
 		RetweetInformations = dict(
 			AUTHORNAME ="",
+			AUTHORFNAME ="",
 			AUTHORID = "",
 			AUTHORVERIFIED = "",
 			AUTHORDESCRIPTION ="",

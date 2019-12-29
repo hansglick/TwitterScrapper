@@ -1,3 +1,4 @@
 # Password files
 *.password
 *.data
+.Rproj.user
