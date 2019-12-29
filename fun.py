@@ -93,11 +93,23 @@ def ParsingFunction(StreamedData):
 
 			)
 
-	# Concatening Stuff and Printing
-	if rtbool:
-		FinalDic = {**StructuredInformations, **RetweetInformations}
 	else:
-		FinalDic = StructuredInformations
+		rtbool = False
+		RetweetInformations = dict(
+			AUTHORNAME ="",
+			AUTHORID = "",
+			AUTHORVERIFIED = "",
+			AUTHORDESCRIPTION ="",
+			AUTHORFOLLOWERS = "",
+			AUTHORTWEETID = "",
+			AUTHORTWEETCONTENT = "",
+			AUTHORTWEETTIMESTAMP = ""
+			)
+
+
+	# Concatening Stuff and Printing
+	FinalDic = {**StructuredInformations, **RetweetInformations}
 	print(FinalDic)
+
 
 	return None
